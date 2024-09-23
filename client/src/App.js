@@ -12,6 +12,7 @@ import FailPayment from "./pages/payment/FailPayment.jsx";
 import SuccessPayment from "./pages/payment/SuccessPayment.jsx";
 import CheckoutPage from "./pages/payment/CheckoutPage.jsx";
 import ReviewForm from "./components/homeComponents/ReviewForm.jsx";
+import PagenotFound from "./pages/pagenotfound/PagenotFound.jsx";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Route path='/payment/checkout' element={<CheckoutPage/>}></Route>
       <Route path='/payment/fail' element={<FailPayment/>}></Route>
       <Route path='/payment/success' element={<SuccessPayment/>}></Route>
+      <Route path='*' element={<PagenotFound/>}></Route>
     </Routes>
     
     

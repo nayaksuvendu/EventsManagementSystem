@@ -11,6 +11,7 @@ import UpdateSlot from "./pages/updateSlot/UpdateSlot";
 import ProtectedRoute from "./components/auth/ProtectedRoute.jsx";
 import Forgetpsw from "./pages/password/Forgetpsw.jsx";
 import ResetPassword from "./pages/password/Resetpsw.jsx";
+import PagenotFound from "./pages/pagenotfound/PagenotFound.jsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="login" element={<Login/>} />
             <Route path="forgetpassword" element={<Forgetpsw/>} />
             <Route path="resetpassword" element={<ResetPassword/>} />
+            <Route path="*" element={<PagenotFound/>} />
 
             <Route index element={ <ProtectedRoute> <Home/></ProtectedRoute> } />
 
@@ -51,27 +53,15 @@ function App() {
           </Route>
 
           <Route path="contact">
-              <Route index element={<ProtectedRoute><List columns={contactColumns}/></ProtectedRoute>} /> 
-               <Route
-                path="new"
-                element={<ProtectedRoute><List columns={contactColumns}/></ProtectedRoute>}
-              />           
+              <Route index element={<ProtectedRoute><List columns={contactColumns}/></ProtectedRoute>} />           
           </Route>
 
           <Route path="feedback">
-              <Route index element={<ProtectedRoute><List columns={feedbackColumns}/></ProtectedRoute>} /> 
-               <Route
-                path="new"
-                element={<ProtectedRoute><List columns={feedbackColumns}/></ProtectedRoute>}
-              />           
+              <Route index element={<ProtectedRoute><List columns={feedbackColumns}/></ProtectedRoute>} />           
           </Route>
 
           <Route path="ticketconfirm">
-              <Route index element={<ProtectedRoute><List columns={TicketColumns}/></ProtectedRoute>} /> 
-               <Route
-                path="new"
-                element={<ProtectedRoute><List columns={TicketColumns}/></ProtectedRoute>}
-              />           
+              <Route index element={<ProtectedRoute><List columns={TicketColumns}/></ProtectedRoute>} />          
           </Route>
 
           

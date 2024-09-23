@@ -109,7 +109,7 @@ const ListFeatured =  () => {
                 <span>{data.address}</span>
             </div>
             <span className="font-medium text-black">
-                Distance from city : {data.distance}m
+                Distance from city : {data.distance}
             </span>
             <br></br>
             <span className=" text-green-600 font-semibold">

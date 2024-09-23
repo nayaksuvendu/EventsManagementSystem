@@ -104,6 +104,15 @@ const UpdateHall = () => {
                   />
                 </div>
               ))}
+              
+             <div className="formInput">
+                <label htmlFor="type">Type</label>
+                <select id="type" onChange={handleChange}>
+                  <option value="Ac">Ac</option>
+                  <option value="Non-Ac">Non-Ac</option>
+                  <option value="Ac,Non-Ac">Ac & Non-Ac</option>
+                </select>
+              </div>
 
               <div className="flex-col flex h-16 cursor-pointer">
                 <label>Slots</label>

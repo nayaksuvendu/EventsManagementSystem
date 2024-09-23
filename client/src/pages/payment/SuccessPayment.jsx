@@ -76,7 +76,7 @@ export default function SuccessPayment() {
       };
    async function printTicket(){
         jsPDFInvoiceTemplate(props);
-        axios.post('/ticketconfirm/create',{...Ticketdata});
+        axios.post('/ticketconfirm/create',Ticketdata);
     }
 
    useEffect(()=>{printTicket()},[]);

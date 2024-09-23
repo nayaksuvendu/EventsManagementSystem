@@ -53,14 +53,6 @@ const UpdateSlot = () => {
                   />
                 </div>
               ))}
-              <div className="formInput">
-                <label htmlFor="desc">Type</label>
-                <select id="desc" onChange={handleChange}>
-                  <option value="Ac">Ac</option>
-                  <option value="Non-Ac">Non-Ac</option>
-                  <option value="Ac,Non-Ac">Ac & Non-Ac</option>
-                </select>
-              </div>
 
               <div className="flex flex-col">
                 <label>Slots</label>

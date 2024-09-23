@@ -1,41 +1,3 @@
-export const userInputs = [
-  {
-    id: "username",
-    label: "Username",
-    type: "text",
-    placeholder: "Ramu",
-  },
-  {
-    id: "email",
-    label: "Email",
-    type: "email",
-    placeholder: "ramu@gmail.com",
-  },
-  {
-    id: "phone",
-    label: "Phone",
-    type: "text",
-    placeholder: "9032762368",
-  },
-  {
-    id: "password",
-    label: "Password",
-    type: "password",
-  },
-  {
-    id: "country",
-    label: "Country",
-    type: "text",
-    placeholder: "India",
-  },
-  {
-    id: "city",
-    label: "City",
-    type: "text",
-    placeholder: "Karimnagar",
-  },
-];
-
 export const hallInputs = [
   {
     id: "name",
@@ -48,13 +10,8 @@ export const hallInputs = [
   label: "Title",
   type: "text",
   placeholder: "The best Hall",
-},
-{
-  id: "type",
-  label: "Type",
-  type: "text",
-  placeholder: "marriage/birthday",
-},
+  },
+
   {
     id: "city",
     label: "City",
@@ -105,5 +62,11 @@ export const roomInputs = [
     label: "Max People",
     type: "number",
     placeholder: "200",
+  },
+  {
+    id: "desc",
+    label: "Description",
+    type: "text",
+    placeholder: "description",
   },
 ];

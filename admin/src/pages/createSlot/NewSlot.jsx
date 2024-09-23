@@ -65,16 +65,8 @@ const NewSlot = () => {
                   />
                 </div>
               ))}
-              <div className="formInput">
-                <label htmlFor="desc">Type</label>
-                <select id="desc" onChange={handleChange}>
-                  <option value="Ac">Ac</option>
-                  <option value="Non-Ac">Non-Ac</option>
-                  <option value="Ac,Non-Ac">Ac & Non-Ac</option>
-                </select>
-              </div>
 
-              <div className="flex flex-col ">
+              <div className="formInput">
                 <label>Slots</label>
                 <textarea
                  className="border-2 text-sky-500"
@@ -83,7 +75,7 @@ const NewSlot = () => {
                 />
               </div>
 
-              <div className="flex flex-col">
+              <div className="formInput">
                 <label>Choose a Hall</label>
                 <select id="hallId" onChange={(e) => setHallId(e.target.value)}>
                   {loading

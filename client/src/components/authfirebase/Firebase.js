@@ -2,15 +2,15 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: "",
-    measurementId: ""
-  };
+    const firebaseConfig = {
+      apiKey: "AIzaSyCMdYn0GQbaGl_uiSqIeP4eIxe2S5TxYG4",
+      authDomain: "nayakevents-fe8d6.firebaseapp.com",
+      projectId: "nayakevents-fe8d6",
+      storageBucket: "nayakevents-fe8d6.appspot.com",
+      messagingSenderId: "779844306150",
+      appId: "1:779844306150:web:f6e69ff969a25031ff2727",
+      measurementId: "G-JQ3R05Z98P"
+    };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
