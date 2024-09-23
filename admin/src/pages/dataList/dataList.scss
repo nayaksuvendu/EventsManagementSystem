@@ -1,0 +1,9 @@
+.list {
+  background: linear-gradient(to bottom, #ccccff 40%, #ffffff 100%);
+  // background-image: url('./lbg.jpeg');
+  display: flex;
+  width: 100%;
+  .listContainer {
+    flex: 6;
+  }
+}
